@@ -1,0 +1,66 @@
+/* FeCr-TWIN design tokens.
+   Process-coded palette: every hue means a plant domain, never decoration.
+   chrome  = chromium / metal chemistry (chrome-oxide green)
+   heat    = temperature, energy, molten streams (incandescent amber)
+   gas     = off-gas, cooling water (steel blue)
+   power   = electrical (arc violet)
+   slag    = slag / oxides (glass ochre)
+   alarm   = abnormal (signal red) - always paired with a shape + text */
+:root {
+  --font-ui: "Barlow", "Segoe UI", system-ui, sans-serif;
+  --font-read: "Barlow Condensed", "Barlow", system-ui, sans-serif;
+  --bg: #1a2124;
+  --bg-2: #20292d;
+  --panel: #242e33;
+  --panel-2: #2b373d;
+  --line: #3a4a52;
+  --ink: #e6ecee;
+  --ink-2: #a9b6bb;
+  --ink-3: #78878d;
+  --chrome: #4fa383;
+  --chrome-2: #2f7d61;
+  --heat: #f2a33a;
+  --heat-2: #e0682b;
+  --gas: #6fa8c9;
+  --power: #a58be0;
+  --slag: #c8a85a;
+  --alarm: #e5534b;
+  --warn: #e8c547;
+  --ok: #57b77e;
+  --stale: #8a7f9a;
+  --synthetic: #d0a2ff;
+  --r-s: 3px;
+  --r-m: 6px;
+  --gap: 12px;
+  --step--1: 0.8rem;
+  --step-0: 0.9rem;
+  --step-1: 1.05rem;
+  --step-2: 1.35rem;
+  --step-3: 1.9rem;
+  --step-4: 2.6rem;
+  color-scheme: dark;
+}
+:root[data-theme="light"] {
+  --bg: #e9eeee;
+  --bg-2: #dfe6e6;
+  --panel: #f7f9f9;
+  --panel-2: #eef3f3;
+  --line: #c3cfd1;
+  --ink: #142024;
+  --ink-2: #3b4c52;
+  --ink-3: #66777d;
+  --chrome: #1f7a59;
+  --chrome-2: #165c43;
+  --heat: #b8650c;
+  --heat-2: #a6401a;
+  --gas: #2f6f95;
+  --power: #6a4cb5;
+  --slag: #8a6a1e;
+  --alarm: #c0302a;
+  --warn: #8f7000;
+  --ok: #217a48;
+  --stale: #6a5f7a;
+  --synthetic: #7c3fb8;
+  color-scheme: light;
+}
+:root[data-contrast="high"] { --ink-2: var(--ink); --ink-3: var(--ink-2); --line: var(--ink-3); }

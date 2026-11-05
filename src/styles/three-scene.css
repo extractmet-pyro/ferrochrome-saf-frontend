@@ -1,0 +1,10 @@
+.stage { position: relative; height: 620px; border-radius: var(--r-m); overflow: hidden; background: radial-gradient(ellipse at 50% 70%, #2a3438, #151b1d); border: 1px solid var(--line); }
+:root[data-theme="light"] .stage { background: radial-gradient(ellipse at 50% 70%, #f4f7f7, #cfd8da); }
+.stage canvas { display: block; width: 100%; height: 100%; }
+.stage .hud { position: absolute; left: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; max-width: 260px; }
+.stage .hud .panel { background: color-mix(in srgb, var(--panel) 88%, transparent); }
+.stage .tip { position: absolute; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 4px 8px; border-radius: var(--r-s);
+  font-size: var(--step--1); display: none; }
+.stage .tools { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+.stage .fallback { position: absolute; inset: 0; display: grid; place-items: center; color: var(--ink-2); }
+.heatscale { height: 10px; width: 180px; border-radius: 3px; background: linear-gradient(90deg, #2c4a7a, #3c8f8a, #d9b23c, #f07a2a, #ffe8c0); }
