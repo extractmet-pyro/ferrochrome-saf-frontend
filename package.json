@@ -1,0 +1,22 @@
+{
+  "name": "ferrochrome-saf-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FeCr-TWIN operator desk - Ferrochrome SAF digital twin (Extractmet Private Limited)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "test": "node --test \"tests/unit/*.test.js\" \"tests/contract/*.test.js\"",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "chart.js": "4.6.1",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "vite": "7.3.7"
+  }
+}
